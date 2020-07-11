@@ -3,15 +3,12 @@ import PropTypes from 'prop-types'
 
 
 
-const CounterApp = ({ value }) => {
+const CounterApp = ({ value = 10 }) => {
 
     const [contador, setContador] = useState(value)
 
-    // handleAdd
     const handleAdd = () => setContador(contador + 1)
-
     const handleSubstract = () => setContador(contador - 1)
-
     const handleReset = () => setContador(value)
 
     return (
